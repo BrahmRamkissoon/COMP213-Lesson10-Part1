@@ -36,12 +36,21 @@
     <!-- Content Section -->
     <div id="mainContent">
         <h2>Forms Example</h2>
-        <form id="mainform" action="#">
-            Username: <input type="text" name="username" id="username" placeholder="Enter your username"/>
-            Password: <input type="password" name="password" id="mainForm"/>
+        <form id="mainForm" action="#" method="get">
+            <div class="formGroup">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username"/>
+            </div>
 
-            <input type="button" value="Login" id="loginButton"/>
-            <input type="reset" value="reset" id="resetButton" />
+            <div class="formGroup">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+            </div>
+
+            <div class="formGroup">
+                <input type="submit" value="Login" id="loginButton" class="formButton"/>
+                <input type="reset" value="Reset" id="resetButton" class="formButton"/>
+            </div>
 
 
         </form>

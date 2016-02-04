@@ -15,9 +15,81 @@ img {
     padding: 5px 10%;
 }
 
+/* Form Styling*/
+form {
+    padding: 10px;
+    margin: 15px 0;
+    width: 25em;
+}
+
 input {
     display: block;
+    padding: 5px;
+    min-width: 6em;
 }
+
+input[type=text], input[type=password] {
+    min-width: 12em;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+    display: inline;
+}
+
+label {
+    float: left;
+    padding: 5px;
+    width: 6em;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.formGroup {
+    padding: 15px;
+    overflow: auto;
+}
+
+.formButton {
+    float: right;
+    margin: 0 0.5em;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    color:white;
+
+    -moz-box-shadow:inset 2px 2px 0px #f2d09e;
+    -webkit-box-shadow:inset 2px 2px 0px #f2d09e;
+    box-shadow:inset 2px 2px 0px #f2d09e;
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    background: #00b7ea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00b7ea 0%, #009ec3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #00b7ea 0%,#009ec3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+
+}
+
+.formButton:hover {
+    background: #0079c4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #0079c4 0%, #0088ea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #0079c4 0%,#0088ea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #0079c4 0%,#0088ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c4', endColorstr='#0088ea',GradientType=0 ); /* IE6-9 */
+
+}
+
+#mainForm {
+    border-top: 1px solid #CCC2CC;
+    border-left: 1px solid #CCC
+    -moz-box-shadow: 0px 0px 12px #cccccc;
+    -webkit-box-shadow: 0px 0px 12px #cccccc;
+    box-shadow: 0px 0px 12px #cccccc;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 header {
     padding: 10px;
@@ -86,7 +158,6 @@ nav ul li:hover {
         width: 34px;
         height: 28px;
         padding: 1px;
-        border: 1px solid white;
         border-radius: 5px
     }
 
@@ -96,7 +167,6 @@ nav ul li:hover {
         width: 22px;
         height: 2px;
         margin: 4px auto;
-        border: 1px solid white;
         border-radius: 2px;
     }
 
@@ -113,12 +183,10 @@ nav ul li:hover {
         margin-top: 35px;
     }
     nav ul li {
-        border: 1px solid white;
         display: block;
     }
 }
 
-/* Form Design*/
-#mainForm {
-    border: 1px solid red;
-}
+
+
+
