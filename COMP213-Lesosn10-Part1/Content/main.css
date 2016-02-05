@@ -162,6 +162,12 @@ nav ul li:hover {
     max-width: 90%;
 }
 
+#contactInfo {
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
 @media only screen and (max-width:480px) {
     .menuContent {
         display: none;
